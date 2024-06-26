@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 
 public class Fraction
 {
@@ -26,8 +27,7 @@ public class Fraction
 
     public string GetFractionString()
     {
-      string text = $"{_top}/{_bottom}";
-      return text;
+      return $"{_top}/{_bottom}";
 
     }
 
