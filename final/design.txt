@@ -1,0 +1,174 @@
+Program 1: Abstraction with YouTube Videos
+
++-------------------+                    
+|      Comment      |
++-------------------+
+| - Name: string    |
+| - Text: string    |
++-------------------+
+| + Comment(string, string) |
++-------------------+
+----------------------------------------------------
++-------------------------+
+|          Video          |
++-------------------------+
+| - Title: string         |
+| - Author: string        |
+| - Length: int           |
+| - Comments: List<Comment>|
++-------------------------+
+| + Video(string, string, int) |
+| + AddComment(Comment)        |
+| + GetNumberOfComments(): int |
+| + GetComments(): List<Comment>|
++-------------------------+
+
+
+Program 2: Encapsulation with Online Ordering
+
++-------------------------------+
+|            Product            |
++-------------------------------+
+| - Name: string                |
+| - ProductId: string           |
+| - Price: double               |
+| - Quantity: int               |
++-------------------------------+
+| + Product(string, string, double, int) |
+| + GetTotalCost(): double      |
+| + GetName(): string           |
+| + GetProductId(): string      |
++-------------------------------+
+
++-----------------------------+
+|           Address           |
++-----------------------------+
+| - Street: string            |
+| - City: string              |
+| - State: string             |
+| - Country: string           |
++-----------------------------+
+| + Address(string, string, string, string) |
+| + IsInUSA(): bool           |
+| + GetFullAddress(): string  |
++-----------------------------+
+
++-----------------------------+
+|           Customer          |
++-----------------------------+
+| - Name: string              |
+| - Address: Address          |
++-----------------------------+
+| + Customer(string, Address) |
+| + IsInUSA(): bool           |
+| + GetName(): string         |
+| + GetAddress(): Address     |
++-----------------------------+
+
++-----------------------------+
+|            Order            |
++-----------------------------+
+| - Products: List<Product>   |
+| - Customer: Customer        |
++-----------------------------+
+| + Order(Customer)           |
+| + AddProduct(Product)       |
+| + GetTotalCost(): double    |
+| + GetPackingLabel(): string |
+| + GetShippingLabel(): string|
++-----------------------------+
+
+Program 3: Inheritance with Event Planning
+
++---------------------------+
+|          Event            |
++---------------------------+
+| - Title: string           |
+| - Description: string     |
+| - Date: DateTime          |
+| - Time: string            |
+| - Address: Address        |
++---------------------------+
+| + Event(string, string, DateTime, string, Address) |
+| + GetStandardDetails(): string                     |
+| + GetShortDescription(): string                    |
+| + GetFullDetails(): string                         |
++---------------------------+
+
++-------------------------------+
+|           Lecture             |
++-------------------------------+
+| - Speaker: string             |
+| - Capacity: int               |
++-------------------------------+
+| + Lecture(string, string, DateTime, string, Address, string, int) |
+| + GetFullDetails(): string    |
++-------------------------------+
+
++-------------------------------+
+|           Reception           |
++-------------------------------+
+| - RSVP_Email: string          |
++-------------------------------+
+| + Reception(string, string, DateTime, string, Address, string) |
+| + GetFullDetails(): string    |
++-------------------------------+
+
++------------------------------------+
+|          OutdoorGathering          |
++------------------------------------+
+| - WeatherForecast: string          |
++------------------------------------+
+| + OutdoorGathering(string, string, DateTime, string, Address, string) |
+| + GetFullDetails(): string         |
++------------------------------------+
+
+Program 4: Polymorphism with Exercise Tracking
+
++---------------------------+
+|          Exercise         |
++---------------------------+
+| - Date: DateTime          |
+| - LengthInMinutes: int    |
++---------------------------+
+| + Exercise(DateTime, int) |
+| + CalculateDistance(): double    |
+| + CalculateSpeed(): double       |
+| + CalculatePace(): double        |
+| + GetSummary(): string           |
++---------------------------+
+
++---------------------------+
+|          Running          |
++---------------------------+
+| - Distance: double        |
++---------------------------+
+| + Running(DateTime, int, double) |
+| + CalculateDistance(): double    |
+| + CalculateSpeed(): double       |
+| + CalculatePace(): double        |
++---------------------------+
+
++---------------------------+
+|          Cycling          |
++---------------------------+
+| - Speed: double           |
++---------------------------+
+| + Cycling(DateTime, int, double) |
+| + CalculateDistance(): double    |
+| + CalculateSpeed(): double       |
+| + CalculatePace(): double        |
++---------------------------+
+
++---------------------------+
+|         Swimming          |
++---------------------------+
+| - NumberOfLaps: int       |
+| - LapDistance: double     |
++---------------------------+
+| + Swimming(DateTime, int, int) |
+| + CalculateDistance(): double    |
+| + CalculateSpeed(): double       |
+| + CalculatePace(): double        |
++---------------------------+
+
